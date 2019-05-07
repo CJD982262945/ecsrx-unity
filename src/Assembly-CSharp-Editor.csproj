@@ -26,7 +26,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -35,7 +35,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup>
     <NoConfig>true</NoConfig>
@@ -60,6 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ActionRPGKit\Editor\CustomEventEditor.cs" />
     <Compile Include="Assets\EcsRx\UnityEditor\Editor\ActiveSystemsViewerInspector.cs" />
     <Compile Include="Assets\EcsRx\UnityEditor\Editor\EditorInputs\BoolEditorInput.cs" />
     <Compile Include="Assets\EcsRx\UnityEditor\Editor\EditorInputs\BoundsEditorInput.cs" />
@@ -690,10 +691,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{E53CDB40-1DF9-8A61-5878-81243AFDF805}</Project>
-      <Name>Assembly-CSharp-firstpass</Name>
-    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}</Project>
       <Name>Assembly-CSharp</Name>
