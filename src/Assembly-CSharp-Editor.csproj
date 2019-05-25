@@ -324,11 +324,14 @@
     <Reference Include="UnityEditor.OSXStandalone.Extensions">
       <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="JetBrains.Rider.Unity.Editor.Plugin.Repacked">
-      <HintPath>/Users/cloudfreexiao/Documents/ecsrx-unity/src/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll</HintPath>
+    <Reference Include="ConsolePro.Editor">
+      <HintPath>/Users/cloudfreexiao/Documents/ecsrx-unity/src/Assets/Plugins/ConsolePro/Editor/ConsolePro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Zenject-usage">
       <HintPath>/Users/cloudfreexiao/Documents/ecsrx-unity/src/Assets/Plugins/Rx/Zenject/Source/Usage/Zenject-usage.dll</HintPath>
+    </Reference>
+    <Reference Include="JetBrains.Rider.Unity.Editor.Plugin.Repacked">
+      <HintPath>/Users/cloudfreexiao/Documents/ecsrx-unity/src/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -698,6 +701,10 @@
       <Project>{229A6FA8-4488-41EE-5135-5AC763A4FDE8}</Project>
       <Name>Assembly-CSharp-Editor-firstpass</Name>
     </ProjectReference>
+    <ProjectReference Include="Zenject-Editor.csproj">
+      <Project>{D5B8C223-FD60-94E4-8328-3D060E400720}</Project>
+      <Name>Zenject-Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="UniRx.csproj">
       <Project>{EB5BB4EA-F22B-E8E9-3D41-C3930B798F7C}</Project>
       <Name>UniRx</Name>
@@ -709,10 +716,6 @@
     <ProjectReference Include="UniRx.Async.Editor.csproj">
       <Project>{7DF778E3-EA0A-FE84-3082-CD9416AEA5A9}</Project>
       <Name>UniRx.Async.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Zenject-Editor.csproj">
-      <Project>{D5B8C223-FD60-94E4-8328-3D060E400720}</Project>
-      <Name>Zenject-Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Zenject.csproj">
       <Project>{3D4F1E55-9B37-CE1A-5045-137ED0A1D4C9}</Project>

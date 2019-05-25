@@ -62,16 +62,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Plugins\ABSystem\Editor\AssetBundle\ABBuilder.cs" />
-    <Compile Include="Assets\Plugins\ABSystem\Editor\AssetBundle\AssetBundleBuilder4x.cs" />
-    <Compile Include="Assets\Plugins\ABSystem\Editor\AssetBundle\AssetBundleBuilder5x.cs" />
-    <Compile Include="Assets\Plugins\ABSystem\Editor\AssetBundle\AssetBundleDataBinaryWriter.cs" />
-    <Compile Include="Assets\Plugins\ABSystem\Editor\AssetBundle\AssetBundleDataWriter.cs" />
-    <Compile Include="Assets\Plugins\ABSystem\Editor\AssetBundle\AssetBundleUtils.cs" />
-    <Compile Include="Assets\Plugins\ABSystem\Editor\AssetBundle\AssetTarget.cs" />
-    <Compile Include="Assets\Plugins\ABSystem\Editor\AssetBundleBuildConfig.cs" />
-    <Compile Include="Assets\Plugins\ABSystem\Editor\AssetBundleBuildPanel.cs" />
-    <Compile Include="Assets\Plugins\ABSystem\Editor\AssetBundleBuildPath.cs" />
     <Compile Include="Assets\Plugins\FairyGUI\Scripts\Editor\DisplayObjectEditor.cs" />
     <Compile Include="Assets\Plugins\FairyGUI\Scripts\Editor\EditorToolSet.cs" />
     <Compile Include="Assets\Plugins\FairyGUI\Scripts\Editor\PackagesWindow.cs" />
@@ -80,6 +70,7 @@
     <Compile Include="Assets\Plugins\FairyGUI\Scripts\Editor\UIContentScalerEditor.cs" />
     <Compile Include="Assets\Plugins\FairyGUI\Scripts\Editor\UIPainterEditor.cs" />
     <Compile Include="Assets\Plugins\FairyGUI\Scripts\Editor\UIPanelEditor.cs" />
+    <Compile Include="Assets\Plugins\LeanTween\Editor\LeanTweenDocumentationEditor.cs" />
     <Compile Include="Assets\Plugins\Rx\Unidux\Scripts\Experimental\Editor\StateJsonEditor.cs" />
     <Compile Include="Assets\Plugins\Rx\Unidux\Scripts\Experimental\Editor\StateJsonFileWrapper.cs" />
     <Compile Include="Assets\Plugins\Rx\Unidux\Scripts\Experimental\Editor\StateJsonFileWrapperInspector.cs" />
@@ -113,6 +104,31 @@
     <Compile Include="Assets\Plugins\Rx\Unidux\Test\Editor\Util\Vector3SerializationSurrogateTest.cs" />
     <Compile Include="Assets\Plugins\Rx\Unidux\Test\Editor\Util\Vector4SerializationSurrogateTest.cs" />
     <Compile Include="Assets\Plugins\Unity-Logs-Viewer\Reporter\Editor\ReporterEditor.cs" />
+    <Compile Include="Assets\Plugins\XAssetV2\AssetBundleBrowser\Editor\AssetBundleBrowserMain.cs" />
+    <Compile Include="Assets\Plugins\XAssetV2\AssetBundleBrowser\Editor\AssetBundleBuildTab.cs" />
+    <Compile Include="Assets\Plugins\XAssetV2\AssetBundleBrowser\Editor\AssetBundleDataSource\ABDataSource.cs" />
+    <Compile Include="Assets\Plugins\XAssetV2\AssetBundleBrowser\Editor\AssetBundleDataSource\ABDataSourceProvider.cs" />
+    <Compile Include="Assets\Plugins\XAssetV2\AssetBundleBrowser\Editor\AssetBundleDataSource\AssetDatabaseABDataSource.cs" />
+    <Compile Include="Assets\Plugins\XAssetV2\AssetBundleBrowser\Editor\AssetBundleManageTab.cs" />
+    <Compile Include="Assets\Plugins\XAssetV2\AssetBundleBrowser\Editor\AssetBundleModel\ABModel.cs" />
+    <Compile Include="Assets\Plugins\XAssetV2\AssetBundleBrowser\Editor\AssetBundleModel\ABModelAssetInfo.cs" />
+    <Compile Include="Assets\Plugins\XAssetV2\AssetBundleBrowser\Editor\AssetBundleModel\ABModelBundleInfo.cs" />
+    <Compile Include="Assets\Plugins\XAssetV2\AssetBundleBrowser\Editor\AssetBundleTree.cs" />
+    <Compile Include="Assets\Plugins\XAssetV2\AssetBundleBrowser\Editor\AssetListTree.cs" />
+    <Compile Include="Assets\Plugins\XAssetV2\AssetBundleBrowser\Editor\BundleDetailList.cs" />
+    <Compile Include="Assets\Plugins\XAssetV2\AssetBundleBrowser\Editor\InspectTab\AssetBundleInspectTab.cs" />
+    <Compile Include="Assets\Plugins\XAssetV2\AssetBundleBrowser\Editor\InspectTab\AssetBundleRecord.cs" />
+    <Compile Include="Assets\Plugins\XAssetV2\AssetBundleBrowser\Editor\InspectTab\InspectSingleBundle.cs" />
+    <Compile Include="Assets\Plugins\XAssetV2\AssetBundleBrowser\Editor\InspectTab\InspectTreeView.cs" />
+    <Compile Include="Assets\Plugins\XAssetV2\AssetBundleBrowser\Editor\MessageList.cs" />
+    <Compile Include="Assets\Plugins\XAssetV2\AssetBundleBrowser\Editor\MessageSystem.cs" />
+    <Compile Include="Assets\Plugins\XAssetV2\XAsset\Editor\AssetManifestABDataSource.cs" />
+    <Compile Include="Assets\Plugins\XAssetV2\XAsset\Editor\AssetsMenuItem.cs" />
+    <Compile Include="Assets\Plugins\XAssetV2\XAsset\Editor\BuildProcessor.cs" />
+    <Compile Include="Assets\Plugins\XAssetV2\XAsset\Editor\BuildScript.cs" />
+    <Compile Include="Assets\Plugins\XAssetV2\XAsset\Editor\ExecuteInternalMono.cs" />
+    <Compile Include="Assets\Plugins\XAssetV2\XAsset\Editor\LaunchLocalServer.cs" />
+    <Compile Include="Assets\Plugins\XAssetV2\XAsset\Editor\Settings.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/cloudfreexiao/Documents/ecsrx-unity/src/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
@@ -344,11 +360,14 @@
     <Reference Include="UnityEditor.OSXStandalone.Extensions">
       <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="JetBrains.Rider.Unity.Editor.Plugin.Repacked">
-      <HintPath>/Users/cloudfreexiao/Documents/ecsrx-unity/src/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll</HintPath>
+    <Reference Include="ConsolePro.Editor">
+      <HintPath>/Users/cloudfreexiao/Documents/ecsrx-unity/src/Assets/Plugins/ConsolePro/Editor/ConsolePro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Zenject-usage">
       <HintPath>/Users/cloudfreexiao/Documents/ecsrx-unity/src/Assets/Plugins/Rx/Zenject/Source/Usage/Zenject-usage.dll</HintPath>
+    </Reference>
+    <Reference Include="JetBrains.Rider.Unity.Editor.Plugin.Repacked">
+      <HintPath>/Users/cloudfreexiao/Documents/ecsrx-unity/src/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -710,6 +729,10 @@
       <Project>{E53CDB40-1DF9-8A61-5878-81243AFDF805}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
+    <ProjectReference Include="Zenject-Editor.csproj">
+      <Project>{D5B8C223-FD60-94E4-8328-3D060E400720}</Project>
+      <Name>Zenject-Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="UniRx.csproj">
       <Project>{EB5BB4EA-F22B-E8E9-3D41-C3930B798F7C}</Project>
       <Name>UniRx</Name>
@@ -721,10 +744,6 @@
     <ProjectReference Include="UniRx.Async.Editor.csproj">
       <Project>{7DF778E3-EA0A-FE84-3082-CD9416AEA5A9}</Project>
       <Name>UniRx.Async.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Zenject-Editor.csproj">
-      <Project>{D5B8C223-FD60-94E4-8328-3D060E400720}</Project>
-      <Name>Zenject-Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Zenject.csproj">
       <Project>{3D4F1E55-9B37-CE1A-5045-137ED0A1D4C9}</Project>

@@ -62,28 +62,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Plugins\ABSystem\Scripts\AssetBundle\AssetBundleDataBinaryReader.cs" />
-    <Compile Include="Assets\Plugins\ABSystem\Scripts\AssetBundle\AssetBundleDataReader.cs" />
-    <Compile Include="Assets\Plugins\ABSystem\Scripts\AssetBundle\AssetBundleExportType.cs" />
-    <Compile Include="Assets\Plugins\ABSystem\Scripts\AssetBundle\AssetBundleInfo.cs" />
-    <Compile Include="Assets\Plugins\ABSystem\Scripts\AssetBundle\AssetBundleLoader.cs" />
-    <Compile Include="Assets\Plugins\ABSystem\Scripts\AssetBundle\AssetBundleLoadProgress.cs" />
-    <Compile Include="Assets\Plugins\ABSystem\Scripts\AssetBundle\AssetBundleManager.cs" />
-    <Compile Include="Assets\Plugins\ABSystem\Scripts\AssetBundle\AssetBundlePathResolver.cs" />
-    <Compile Include="Assets\Plugins\ABSystem\Scripts\AssetBundle\AssetBundleUpdater.cs" />
-    <Compile Include="Assets\Plugins\ABSystem\Scripts\AssetBundle\HashUtil.cs" />
-    <Compile Include="Assets\Plugins\ABSystem\Scripts\AssetBundle\ListPool.cs" />
-    <Compile Include="Assets\Plugins\ABSystem\Scripts\AssetBundle\Loaders\AndroidAssetBundleLoader.cs" />
-    <Compile Include="Assets\Plugins\ABSystem\Scripts\AssetBundle\Loaders\EditorModeAssetBundleLoader.cs" />
-    <Compile Include="Assets\Plugins\ABSystem\Scripts\AssetBundle\Loaders\IOSAssetBundleLoader.cs" />
-    <Compile Include="Assets\Plugins\ABSystem\Scripts\AssetBundle\Loaders\MissAssetBundleLoader.cs" />
-    <Compile Include="Assets\Plugins\ABSystem\Scripts\AssetBundle\ObjectPool.cs" />
-    <Compile Include="Assets\Plugins\ABSystem\util\Callback.cs" />
-    <Compile Include="Assets\Plugins\ABSystem\util\EventTriggerListener.cs" />
-    <Compile Include="Assets\Plugins\ABSystem\util\FileUtility.cs" />
-    <Compile Include="Assets\Plugins\ABSystem\util\Message.cs" />
-    <Compile Include="Assets\Plugins\ABSystem\util\Singleton.cs" />
-    <Compile Include="Assets\Plugins\ABSystem\util\SingletonMonoBehaviour.cs" />
+    <Compile Include="Assets\Plugins\ConsolePro\ConsoleProDebug.cs" />
+    <Compile Include="Assets\Plugins\ConsolePro\Remote\ConsoleProRemoteServer.cs" />
+    <Compile Include="Assets\Plugins\ConsolePro\Remote\LiteNetLib\FastBitConverter.cs" />
+    <Compile Include="Assets\Plugins\ConsolePro\Remote\LiteNetLib\INetEventListener.cs" />
+    <Compile Include="Assets\Plugins\ConsolePro\Remote\LiteNetLib\NatPunchModule.cs" />
+    <Compile Include="Assets\Plugins\ConsolePro\Remote\LiteNetLib\NetConstants.cs" />
+    <Compile Include="Assets\Plugins\ConsolePro\Remote\LiteNetLib\NetDataReader.cs" />
+    <Compile Include="Assets\Plugins\ConsolePro\Remote\LiteNetLib\NetDataWriter.cs" />
+    <Compile Include="Assets\Plugins\ConsolePro\Remote\LiteNetLib\NetDebug.cs" />
+    <Compile Include="Assets\Plugins\ConsolePro\Remote\LiteNetLib\NetEndPoint.cs" />
+    <Compile Include="Assets\Plugins\ConsolePro\Remote\LiteNetLib\NetManager.cs" />
+    <Compile Include="Assets\Plugins\ConsolePro\Remote\LiteNetLib\NetPacket.cs" />
+    <Compile Include="Assets\Plugins\ConsolePro\Remote\LiteNetLib\NetPacketPool.cs" />
+    <Compile Include="Assets\Plugins\ConsolePro\Remote\LiteNetLib\NetPeer.cs" />
+    <Compile Include="Assets\Plugins\ConsolePro\Remote\LiteNetLib\NetPeerCollection.cs" />
+    <Compile Include="Assets\Plugins\ConsolePro\Remote\LiteNetLib\NetSerializer.cs" />
+    <Compile Include="Assets\Plugins\ConsolePro\Remote\LiteNetLib\NetSocket.cs" />
+    <Compile Include="Assets\Plugins\ConsolePro\Remote\LiteNetLib\NetThread.cs" />
+    <Compile Include="Assets\Plugins\ConsolePro\Remote\LiteNetLib\NetUtils.cs" />
+    <Compile Include="Assets\Plugins\ConsolePro\Remote\LiteNetLib\NtpSyncModule.cs" />
+    <Compile Include="Assets\Plugins\ConsolePro\Remote\LiteNetLib\ReliableChannel.cs" />
+    <Compile Include="Assets\Plugins\ConsolePro\Remote\LiteNetLib\SequencedChannel.cs" />
+    <Compile Include="Assets\Plugins\ConsolePro\Remote\LiteNetLib\SimpleChannel.cs" />
     <Compile Include="Assets\Plugins\FairyGUI\Scripts\Core\BlendMode.cs" />
     <Compile Include="Assets\Plugins\FairyGUI\Scripts\Core\CaptureCamera.cs" />
     <Compile Include="Assets\Plugins\FairyGUI\Scripts\Core\Container.cs" />
@@ -234,6 +235,33 @@
     <Compile Include="Assets\Plugins\FairyGUI\Scripts\Utils\XMLList.cs" />
     <Compile Include="Assets\Plugins\FairyGUI\Scripts\Utils\XMLUtils.cs" />
     <Compile Include="Assets\Plugins\FairyGUI\Scripts\Utils\ZipReader.cs" />
+    <Compile Include="Assets\Plugins\HttpClient\Dispatcher\Dispatcher.cs" />
+    <Compile Include="Assets\Plugins\HttpClient\Dispatcher\IDispatcher.cs" />
+    <Compile Include="Assets\Plugins\HttpClient\Enums\ContentReadAction.cs" />
+    <Compile Include="Assets\Plugins\HttpClient\Enums\HttpAction.cs" />
+    <Compile Include="Assets\Plugins\HttpClient\Enums\HttpCompletionOption.cs" />
+    <Compile Include="Assets\Plugins\HttpClient\Example\ExampleSceneManagerController.cs" />
+    <Compile Include="Assets\Plugins\HttpClient\Helpers\AuthHelper.cs" />
+    <Compile Include="Assets\Plugins\HttpClient\HttpClient.cs" />
+    <Compile Include="Assets\Plugins\HttpClient\HttpContent\ByteArrayContent.cs" />
+    <Compile Include="Assets\Plugins\HttpClient\HttpContent\FormUrlEncodedContent.cs" />
+    <Compile Include="Assets\Plugins\HttpClient\HttpContent\IHttpContent.cs" />
+    <Compile Include="Assets\Plugins\HttpClient\HttpContent\MultiPartContent.cs" />
+    <Compile Include="Assets\Plugins\HttpClient\HttpContent\MultipartFormDataContent.cs" />
+    <Compile Include="Assets\Plugins\HttpClient\HttpContent\StreamContent.cs" />
+    <Compile Include="Assets\Plugins\HttpClient\HttpContent\StringContent.cs" />
+    <Compile Include="Assets\Plugins\HttpClient\HttpRequest\HttpBase.cs" />
+    <Compile Include="Assets\Plugins\HttpClient\HttpRequest\HttpRequest.cs" />
+    <Compile Include="Assets\Plugins\HttpClient\Messages\HttpResponseMessage.cs" />
+    <Compile Include="Assets\Plugins\HttpClient\Messages\UploadStatusMessage.cs" />
+    <Compile Include="Assets\Plugins\LeanTween\Framework\LeanAudio.cs" />
+    <Compile Include="Assets\Plugins\LeanTween\Framework\LeanSmooth.cs" />
+    <Compile Include="Assets\Plugins\LeanTween\Framework\LeanTest.cs" />
+    <Compile Include="Assets\Plugins\LeanTween\Framework\LeanTween.cs" />
+    <Compile Include="Assets\Plugins\LeanTween\Framework\LeanTweenExt.cs" />
+    <Compile Include="Assets\Plugins\LeanTween\Framework\LTDescr.cs" />
+    <Compile Include="Assets\Plugins\LeanTween\Framework\LTDescrOptional.cs" />
+    <Compile Include="Assets\Plugins\LeanTween\Framework\LTSeq.cs" />
     <Compile Include="Assets\Plugins\MiniJSON\MiniJSON.cs" />
     <Compile Include="Assets\Plugins\RVO\Core\2D\Agent.cs" />
     <Compile Include="Assets\Plugins\RVO\Core\2D\KdTree.cs" />
@@ -252,56 +280,11 @@
     <Compile Include="Assets\Plugins\RVO\Unity\NavAgent3D.cs" />
     <Compile Include="Assets\Plugins\RVO\Unity\RVO3DSimulatorController.cs" />
     <Compile Include="Assets\Plugins\RVO\Unity\RVOSimulatorController.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Animator\CompositeAnimator.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Animator\Easing\Back.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Animator\Easing\Bounce.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Animator\Easing\Circ.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Animator\Easing\Const.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Animator\Easing\Cubic.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Animator\Easing\EasingAnimator.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Animator\Easing\Elastic.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Animator\Easing\Expo.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Animator\Easing\IEasing.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Animator\Easing\Linear.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Animator\Easing\Quad.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Animator\Easing\Quart.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Animator\Easing\Quint.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Animator\Easing\Sine.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Animator\IAnimator.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Animator\Motion\Acceleration.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Animator\Motion\AnimationCurve.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Animator\Motion\Random.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Animator\Motion\Uniform.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Animator\Velocity.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Examples\Examples.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Examples\ExamplesPlayer.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Extension\GameObjectLocalPositionExtensions.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Extension\GameObjectLocalRotationExtensions.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Extension\GameObjectLocalScaleExtensions.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Extension\GameObjectPositionExtensions.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Extension\GameObjectRotationExtensions.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Extension\ObservableExtensions.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Extension\TransformLocalPositionExtensions.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Extension\TransformLocalRotationExtensions.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Extension\TransformLocalScaleExtensions.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Extension\TransformPositionExtensions.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Extension\TransformRotationExtensions.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Extension\Vector1Extensions.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Extension\Vector2Extensions.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Extension\Vector3Extensions.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Extension\Vector4Extensions.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Player\Anime.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Player\AnimeColor.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Player\AnimeVector1.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Player\AnimeVector2.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Player\AnimeVector3.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Player\AnimeVector4.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Player\Stay.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Player\Stop.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Rx\FromMicroCoroutineWithInitialValue.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Scheduler\IScheduler.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Scheduler\TimeScheduler.cs" />
-    <Compile Include="Assets\Plugins\Rx\AnimeRx\Scheduler\UnscaledTimeScheduler.cs" />
+    <Compile Include="Assets\Plugins\Rx\StateMachine\State.cs" />
+    <Compile Include="Assets\Plugins\Rx\StateMachine\StateMachine.cs" />
+    <Compile Include="Assets\Plugins\Rx\StateMachine\UniRxCustom\Triggers\ObservableOnDrawGizmosTrigger.cs" />
+    <Compile Include="Assets\Plugins\Rx\StateMachine\UniRxCustom\Triggers\ObservableOnGUITrigger.cs" />
+    <Compile Include="Assets\Plugins\Rx\StateMachine\UniRxCustom\Triggers\ObservableTriggerExtensions.cs" />
     <Compile Include="Assets\Plugins\Rx\Unibus\Examples\Scripts\ReceiverText.cs" />
     <Compile Include="Assets\Plugins\Rx\Unibus\Examples\Scripts\SenderButton.cs" />
     <Compile Include="Assets\Plugins\Rx\Unibus\Scripts\MonoBehaviourExtension.cs" />
@@ -404,57 +387,29 @@
     <Compile Include="Assets\Plugins\Rx\Unidux\Scripts\Util\Vector2SerializationSurrogate.cs" />
     <Compile Include="Assets\Plugins\Rx\Unidux\Scripts\Util\Vector3SerializationSurrogate.cs" />
     <Compile Include="Assets\Plugins\Rx\Unidux\Scripts\Util\Vector4SerializationSurrogate.cs" />
-    <Compile Include="Assets\Plugins\Rx\UniIx\Scripts\Buffer.cs" />
-    <Compile Include="Assets\Plugins\Rx\UniIx\Scripts\Case.cs" />
-    <Compile Include="Assets\Plugins\Rx\UniIx\Scripts\Catch.cs" />
-    <Compile Include="Assets\Plugins\Rx\UniIx\Scripts\Concatenate.cs" />
-    <Compile Include="Assets\Plugins\Rx\UniIx\Scripts\Create.cs" />
-    <Compile Include="Assets\Plugins\Rx\UniIx\Scripts\Defer.cs" />
-    <Compile Include="Assets\Plugins\Rx\UniIx\Scripts\Distinct.cs" />
-    <Compile Include="Assets\Plugins\Rx\UniIx\Scripts\Do.cs" />
-    <Compile Include="Assets\Plugins\Rx\UniIx\Scripts\Empty.cs" />
-    <Compile Include="Assets\Plugins\Rx\UniIx\Scripts\Expand.cs" />
-    <Compile Include="Assets\Plugins\Rx\UniIx\Scripts\Finally.cs" />
-    <Compile Include="Assets\Plugins\Rx\UniIx\Scripts\For.cs" />
-    <Compile Include="Assets\Plugins\Rx\UniIx\Scripts\ForEach.cs" />
-    <Compile Include="Assets\Plugins\Rx\UniIx\Scripts\Generate.cs" />
-    <Compile Include="Assets\Plugins\Rx\UniIx\Scripts\Hide.cs" />
-    <Compile Include="Assets\Plugins\Rx\UniIx\Scripts\IAwaitable.cs" />
-    <Compile Include="Assets\Plugins\Rx\UniIx\Scripts\If.cs" />
-    <Compile Include="Assets\Plugins\Rx\UniIx\Scripts\IgnoreElements.cs" />
-    <Compile Include="Assets\Plugins\Rx\UniIx\Scripts\IYielder.cs" />
-    <Compile Include="Assets\Plugins\Rx\UniIx\Scripts\Max.cs" />
-    <Compile Include="Assets\Plugins\Rx\UniIx\Scripts\Memoize.cs" />
-    <Compile Include="Assets\Plugins\Rx\UniIx\Scripts\Min.cs" />
-    <Compile Include="Assets\Plugins\Rx\UniIx\Scripts\OnErrorResumeNext.cs" />
-    <Compile Include="Assets\Plugins\Rx\UniIx\Scripts\Publish.cs" />
-    <Compile Include="Assets\Plugins\Rx\UniIx\Scripts\Repeat.cs" />
-    <Compile Include="Assets\Plugins\Rx\UniIx\Scripts\Retry.cs" />
-    <Compile Include="Assets\Plugins\Rx\UniIx\Scripts\Return.cs" />
-    <Compile Include="Assets\Plugins\Rx\UniIx\Scripts\Scan.cs" />
-    <Compile Include="Assets\Plugins\Rx\UniIx\Scripts\SelectMany.cs" />
-    <Compile Include="Assets\Plugins\Rx\UniIx\Scripts\Share.cs" />
-    <Compile Include="Assets\Plugins\Rx\UniIx\Scripts\Skip.cs" />
-    <Compile Include="Assets\Plugins\Rx\UniIx\Scripts\StartsWith.cs" />
-    <Compile Include="Assets\Plugins\Rx\UniIx\Scripts\Take.cs" />
-    <Compile Include="Assets\Plugins\Rx\UniIx\Scripts\Throw.cs" />
-    <Compile Include="Assets\Plugins\Rx\UniIx\Scripts\Using.cs" />
-    <Compile Include="Assets\Plugins\Rx\UniIx\Scripts\While.cs" />
     <Compile Include="Assets\Plugins\Unity-Logs-Viewer\Reporter\MultiKeyDictionary.cs" />
     <Compile Include="Assets\Plugins\Unity-Logs-Viewer\Reporter\Reporter.cs" />
     <Compile Include="Assets\Plugins\Unity-Logs-Viewer\Reporter\ReporterGUI.cs" />
     <Compile Include="Assets\Plugins\Unity-Logs-Viewer\Reporter\ReporterMessageReceiver.cs" />
     <Compile Include="Assets\Plugins\Unity-Logs-Viewer\Reporter\Test\Rotate.cs" />
     <Compile Include="Assets\Plugins\Unity-Logs-Viewer\Reporter\Test\TestReporter.cs" />
+    <Compile Include="Assets\Plugins\XAssetV2\XAsset\Asset.cs" />
+    <Compile Include="Assets\Plugins\XAssetV2\XAsset\Assets.cs" />
+    <Compile Include="Assets\Plugins\XAssetV2\XAsset\AssetsManifest.cs" />
+    <Compile Include="Assets\Plugins\XAssetV2\XAsset\AssetsUpdate.cs" />
+    <Compile Include="Assets\Plugins\XAssetV2\XAsset\Bundle.cs" />
+    <Compile Include="Assets\Plugins\XAssetV2\XAsset\Bundles.cs" />
+    <Compile Include="Assets\Plugins\XAssetV2\XAsset\Download.cs" />
+    <Compile Include="Assets\Plugins\XAssetV2\XAsset\Reference.cs" />
+    <Compile Include="Assets\Plugins\XAssetV2\XAsset\Utility.cs" />
+    <Compile Include="Assets\Plugins\XAssetV2\XAsset\Versions.cs" />
     <None Include="Assets\Plugins\FairyGUI\Resources\Shaders\AddOn\FairyGUI-BlurFilter.shader" />
-    <None Include="Assets\Plugins\Rx\UniIx\ReadMe.txt" />
     <None Include="Assets\Plugins\FairyGUI\Resources\Shaders\FairyGUI-Text.shader" />
-    <None Include="Assets\Plugins\Rx\AnimeRx\Version.txt" />
+    <None Include="Assets\Plugins\LeanTween\ReadMe.txt" />
+    <None Include="Assets\Plugins\HttpClient\readme.txt" />
     <None Include="Assets\Plugins\FairyGUI\Resources\Shaders\FairyGUI-Image.shader" />
     <None Include="Assets\Plugins\Rx\UniRx\ReadMe.txt" />
-    <None Include="Assets\Plugins\ABSystem\link.xml" />
-    <None Include="Assets\Plugins\Rx\AnimeRx\README.txt" />
-    <None Include="Assets\Plugins\Rx\AnimeRx\LICENSE.txt" />
+    <None Include="Assets\Plugins\LeanTween\License.txt" />
     <None Include="Assets\Plugins\FairyGUI\Resources\Shaders\FairyGUI-BMFont.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/cloudfreexiao/Documents/ecsrx-unity/src/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
@@ -1031,6 +986,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Zenject-Editor.csproj">
+      <Project>{D5B8C223-FD60-94E4-8328-3D060E400720}</Project>
+      <Name>Zenject-Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="UniRx.csproj">
       <Project>{EB5BB4EA-F22B-E8E9-3D41-C3930B798F7C}</Project>
       <Name>UniRx</Name>
@@ -1042,10 +1001,6 @@
     <ProjectReference Include="UniRx.Async.Editor.csproj">
       <Project>{7DF778E3-EA0A-FE84-3082-CD9416AEA5A9}</Project>
       <Name>UniRx.Async.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Zenject-Editor.csproj">
-      <Project>{D5B8C223-FD60-94E4-8328-3D060E400720}</Project>
-      <Name>Zenject-Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Zenject.csproj">
       <Project>{3D4F1E55-9B37-CE1A-5045-137ED0A1D4C9}</Project>
