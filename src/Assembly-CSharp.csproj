@@ -247,6 +247,35 @@
     <Compile Include="Assets\EcsRx\Zenject\Extensions\IZenjectExtensions.cs" />
     <Compile Include="Assets\EcsRx\Zenject\Helpers\BindSystemsInNamespace.cs" />
     <Compile Include="Assets\EcsRx\Zenject\Installers\AutoBindSystemsInstaller.cs" />
+    <Compile Include="Assets\Game\Scripts\FGUI\Attributes\FGUIAttributes.cs" />
+    <Compile Include="Assets\Game\Scripts\FGUI\BindingsRx\GButtonExtension.cs" />
+    <Compile Include="Assets\Game\Scripts\FGUI\BindingsRx\GComponentExtension.cs" />
+    <Compile Include="Assets\Game\Scripts\FGUI\BindingsRx\GGraphExtension.cs" />
+    <Compile Include="Assets\Game\Scripts\FGUI\BindingsRx\GGroupExtension.cs" />
+    <Compile Include="Assets\Game\Scripts\FGUI\BindingsRx\GListExtension.cs" />
+    <Compile Include="Assets\Game\Scripts\FGUI\BindingsRx\GLoaderExtension.cs" />
+    <Compile Include="Assets\Game\Scripts\FGUI\BindingsRx\GMovieClipExtension.cs" />
+    <Compile Include="Assets\Game\Scripts\FGUI\BindingsRx\GObjectExtension.cs" />
+    <Compile Include="Assets\Game\Scripts\FGUI\BindingsRx\GRichTextFieldExtension.cs" />
+    <Compile Include="Assets\Game\Scripts\FGUI\BindingsRx\GSliderExtension.cs" />
+    <Compile Include="Assets\Game\Scripts\FGUI\BindingsRx\GTextFieldExtension.cs" />
+    <Compile Include="Assets\Game\Scripts\FGUI\BindingsRx\IRxComponent.cs" />
+    <Compile Include="Assets\Game\Scripts\FGUI\BindingsRx\IUnirxBind.cs" />
+    <Compile Include="Assets\Game\Scripts\FGUI\BindingsRx\UIBase.cs" />
+    <Compile Include="Assets\Game\Scripts\FGUI\FGUIUnidux.cs" />
+    <Compile Include="Assets\Game\Scripts\FGUI\Renderer\FGUIHelloWorld.cs" />
+    <Compile Include="Assets\Game\Scripts\FGUI\State.cs" />
+    <Compile Include="Assets\Game\Scripts\Loader\AssetBundleLoader.cs" />
+    <Compile Include="Assets\Game\Scripts\Loader\IFileLoader.cs" />
+    <Compile Include="Assets\Game\Scripts\Loader\ILoader.cs" />
+    <Compile Include="Assets\Game\Scripts\Loader\ILoadStrategy.cs" />
+    <Compile Include="Assets\Game\Scripts\Loader\ImageLoader.cs" />
+    <Compile Include="Assets\Game\Scripts\Loader\IResourceLoader.cs" />
+    <Compile Include="Assets\Game\Scripts\Loader\Loader.cs" />
+    <Compile Include="Assets\Game\Scripts\Loader\LocalFileLoader.cs" />
+    <Compile Include="Assets\Game\Scripts\Loader\LocalPriorLoadStrategy.cs" />
+    <Compile Include="Assets\Game\Scripts\Loader\RemoteFileLoader.cs" />
+    <Compile Include="Assets\Game\Scripts\Loader\ResourceLoader.cs" />
     <None Include="Assets\StreamingAssets\build_info.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/cloudfreexiao/Documents/ecsrx-unity/src/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
@@ -465,7 +494,7 @@
       <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="Zenject-usage">
-      <HintPath>/Users/cloudfreexiao/Documents/ecsrx-unity/src/Assets/Plugins/Zenject/Source/Usage/Zenject-usage.dll</HintPath>
+      <HintPath>/Users/cloudfreexiao/Documents/ecsrx-unity/src/Assets/Plugins/Rx/Zenject/Source/Usage/Zenject-usage.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -827,10 +856,6 @@
       <Project>{E53CDB40-1DF9-8A61-5878-81243AFDF805}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
-    <ProjectReference Include="Zenject-Editor.csproj">
-      <Project>{D5B8C223-FD60-94E4-8328-3D060E400720}</Project>
-      <Name>Zenject-Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="UniRx.csproj">
       <Project>{EB5BB4EA-F22B-E8E9-3D41-C3930B798F7C}</Project>
       <Name>UniRx</Name>
@@ -842,6 +867,10 @@
     <ProjectReference Include="UniRx.Async.Editor.csproj">
       <Project>{7DF778E3-EA0A-FE84-3082-CD9416AEA5A9}</Project>
       <Name>UniRx.Async.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Zenject-Editor.csproj">
+      <Project>{D5B8C223-FD60-94E4-8328-3D060E400720}</Project>
+      <Name>Zenject-Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Zenject.csproj">
       <Project>{3D4F1E55-9B37-CE1A-5045-137ED0A1D4C9}</Project>
