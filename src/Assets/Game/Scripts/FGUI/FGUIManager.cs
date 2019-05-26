@@ -20,5 +20,8 @@ namespace FGUI
         private List<UIBase> _uiList = new List<UIBase>();
         private List<UIBase> _pendingUIList = new List<UIBase>();
         
+        System.Object[] _cachedUIpackageIDAtts;
+        Dictionary<Type, FGUIAttributes.UIPackageIDAttribute> _uiTypeWithAttsDic = new Dictionary<Type, FGUIAttributes.UIPackageIDAttribute>();
+
     }
 }
